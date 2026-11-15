@@ -16,8 +16,16 @@ RAM_FREE=$(free -m | awk 'NR==2 {print $7}')
 # 4. Gather Disk Telemetry
 DISK_USAGE=$(df -h / | awk 'NR==2 {print $5}' | sed 's/%//')
 
+# 5. Define and Evaluate Disk Usage Threshold
+THRESHOLD=80
+
+if [ "$DISK_USAGE" -ge "$THRESHOLD" ]; then
+    STATUS="[WARNING] Disk usage is critically high at ${DISK_USAGE}%!"
+else
+    STATUS="[OK] Disk usage is stable at ${DISK_USAGE}%."
+fi
 # Display Results
 echo "NOC Health Check: $TIMESTAMP"
 echo "CPU Load: $CPU_LOAD"
 echo "Available RAM: ${RAM_FREE}MB"
-echo "Disk Usage: ${DISK_USAGE}%"
+echo "Disk Status: $STATUS"
