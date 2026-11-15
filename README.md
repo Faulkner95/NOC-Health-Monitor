@@ -4,7 +4,7 @@
 
 A bash-based system health monitoring tool develop for a theoretical Network Operations Center that collects device telemetry and writes the current usage values to a persistent log file.
 
-The purpose of this project is to demonstrate basic linux knowledge required for sys admin compitence in the real world.
+The purpose of this project is to demonstrate basic linux knowledge required for system administration task competence in the real world.
 
 ## Features
 
@@ -91,7 +91,7 @@ Open crontab:
 crontab -e
 ```
 
-Add the following entr for hourly telemetry to be added:
+Add the following entry for hourly telemetry to be added:
 
 ```bash
 0 * * * * cd /path/to/NOC-Health-Monitor && /path/to/YOURNAMEANDPWD/NOC-Health-Monitor/health_check.sh
