@@ -1,6 +1,6 @@
 # NOC System Health Monitor
 
-## Project Overvie
+## Project Overview
 
 A bash-based system health monitoring tool develop for a theoretical Network Operations Center that collects device telemetry and writes the current usage values to a persistent log file.
 
