@@ -42,17 +42,7 @@ NOC-Health-Monitor/
 ├── .gitignore            # Excludes generated and temporary files
 └── README.md             # Project documentation
 ```
-## Repository Structure
 
-```text
-NOC-Health-Monitor/
-├── health_check.sh       # Main Bash monitoring script
-├── logs/
-│   └── system_health.log # Generated monitoring reports
-├── docs/                 # Project documentation
-├── .gitignore            # Excludes generated and temporary files
-└── README.md             # Project documentation
-```
 ## Installation and Execution
 
 ### 1. Clone the Repository
